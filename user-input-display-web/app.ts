@@ -1,3 +1,12 @@
 const number1 = document.getElementById("num1") as HTMLInputElement;
-const number2 = document.getElementById("printBtn") as HTMLButtonElement;
-const number3 = document.getElementById("enteredNumber") as HTMLSpanElement;
+const printButton = document.getElementById("printBtn") as HTMLButtonElement;
+const printValue = document.getElementById(
+  "enteredNumber"
+) as HTMLOutputElement;
+
+function printEnterValue(): void {
+  const numb1 = parseFloat(number1.value);
+  printValue.textContent = numb1.toString();
+}
+
+printButton.addEventListener("click", printEnterValue);
