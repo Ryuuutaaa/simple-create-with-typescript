@@ -15,3 +15,15 @@ function addNumber() {
   let result = a + b;
   printResult.textContent = result.toString();
 }
+
+AddBtn.addEventListener("click", addNumber);
+
+function subtractNumber() {
+  let a = parseFloat(number1.value);
+  let b = parseFloat(number2.value);
+
+  let result = a - b;
+  printResult.textContent = result.toString();
+}
+
+SubBtn.addEventListener("click", subtractNumber);
