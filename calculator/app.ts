@@ -27,3 +27,20 @@ function subtractNumber() {
 }
 
 SubBtn.addEventListener("click", subtractNumber);
+
+function multiplyNumber() {
+  let a = parseFloat(number1.value);
+  let b = parseFloat(number2.value);
+
+  let result = a * b;
+  printResult.textContent = result.toString();
+}
+
+MulBtn.addEventListener("click", multiplyNumber);
+
+function deivedeNumber() {
+  let a = parseFloat(number1.value);
+  let b = parseFloat(number2.value);
+
+  let result = a / b;
+}
