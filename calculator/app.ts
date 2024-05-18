@@ -43,4 +43,7 @@ function deivedeNumber() {
   let b = parseFloat(number2.value);
 
   let result = a / b;
+  printResult.textContent = result.toString();
 }
+
+DivBtn.addEventListener("click", deivedeNumber);
